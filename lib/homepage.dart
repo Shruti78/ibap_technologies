@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:ibap_technologies/Contact_us.dart';
 import 'package:ibap_technologies/submit_document.dart';
 
@@ -304,7 +303,7 @@ class _HomePageState extends State<HomePage> {
                         top: 84.5,
                         left: 27.75,
                         child: Text(
-                          'Submit \nDocument',
+                          'Submit\n Document',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               decoration: TextDecoration.none,
@@ -404,7 +403,8 @@ class _HomePageState extends State<HomePage> {
                                   top: 5,
                                   left: 3.3333332538604736,
                                   child: IconButton(
-                                    icon: Icon(Icons.edit_document),
+                                    icon:
+                                        Icon(Icons.local_laundry_service_sharp),
                                     onPressed: () {
                                       Navigator.push(
                                         context,

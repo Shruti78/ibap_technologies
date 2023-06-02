@@ -28,10 +28,41 @@ class ContactUs extends StatelessWidget {
                 );
               },
             ),
-            trailing: Icon(
-              Icons.abc,
-              color: Colors.white,
-            ),
+            trailing: Container(
+                width: 32,
+                height: 32,
+                child: Stack(children: <Widget>[
+                  Positioned(
+                      top: 0,
+                      left: 0,
+                      child: Container(
+                          width: 32,
+                          height: 32,
+                          decoration: BoxDecoration(
+                            color: Color.fromRGBO(255, 255, 255, 1),
+                            border: Border.all(
+                              color: Color.fromRGBO(40, 139, 255, 1),
+                              width: 1,
+                            ),
+                            borderRadius:
+                                BorderRadius.all(Radius.elliptical(32, 32)),
+                          ))),
+                  Positioned(
+                      top: 7,
+                      left: 6,
+                      child: Text(
+                        'MT',
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                            color: Color.fromRGBO(0, 0, 0, 1),
+                            fontFamily: 'Roboto',
+                            fontSize: 16,
+                            letterSpacing:
+                                0 /*percentages not used in flutter. defaulting to zero*/,
+                            fontWeight: FontWeight.normal,
+                            height: 1),
+                      )),
+                ])),
           ),
         ),
         SizedBox(
